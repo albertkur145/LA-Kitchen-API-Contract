@@ -1,0 +1,27 @@
+NB : 
+- untuk mengupload foto produk ke dalam sistem.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/product/upload
+type     : POST
+params   : {
+    "photos": [
+        "file",
+    ],
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}

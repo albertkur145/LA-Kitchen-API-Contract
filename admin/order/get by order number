@@ -1,0 +1,53 @@
+NB : 
+- untuk mengambil detail pesanan/transaksi tertentu.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/order/id
+type     : GET
+params   : {
+    "orderNumber": "130495302572",
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "customer": {
+            "id": 1,
+            "name": "Ryan Santoso",
+            "email": "ryansan@gmail.com",
+            "phoneNumber": "081395247850",
+            "address": "Jl Cendrawasih Ruslan No 44A, Blok C",
+            "province": "Kalimantan Tengah",
+            "city": "Palu",
+            "region": "Ilir Timur II",
+        },
+        "order": {
+            "orderNumber": "130495302572",
+            "date": "16 September 2020",
+            "status": "Menunggu Pembayaran",
+            "paymentMethod": "Transfer",
+            "totalPayment": 237500,
+        },
+        "products": [
+            {
+                "id": 1,
+                "name": "Hakau Ayam x Udang",
+                "price": 50000,
+                "quantity": 2,
+                "subTotal": 100000,
+                "note": "Tolong topingnya yang banyak ya.",
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

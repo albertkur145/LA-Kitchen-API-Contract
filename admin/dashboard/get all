@@ -1,0 +1,40 @@
+NB : 
+- untuk mengambil berbagai kebutuhan di dashboard.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/dashboard
+type     : GET
+params   : -
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "orders": {
+            "today": 2,
+            "prepared": 5,
+            "readyToShip": 2,
+            "inDelivery": 5,
+        },
+        "sales": {
+            "todayIncome": 638500,
+            "weekIncome": 225800,
+            "soldToday": 5,
+        },
+        "others": {
+            "newUsers": 24,
+            "users": 237,
+            "employees": 6,
+        },
+    },
+    "paging": null,
+    "errors": null,
+}

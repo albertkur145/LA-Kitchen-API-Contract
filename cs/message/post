@@ -1,0 +1,28 @@
+NB : 
+- untuk mengirim sebuah pesan.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/cs/message
+type     : POST
+params   : {
+    "from": 1,
+    "to": 2,
+    "callId": 1,
+    "message": "Halo.",
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}

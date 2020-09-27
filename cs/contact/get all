@@ -1,0 +1,33 @@
+NB : 
+- untuk mengambil contact / call yang belum diakhiri.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/cs/contact
+type     : GET
+params   : -
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "customer": [
+            {
+                "id": 1,
+                "name": "Albert",
+                "email": "albert@gmail.com",
+                "callId": 2,
+                "unreadMessages": 3,
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

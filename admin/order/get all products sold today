@@ -1,0 +1,33 @@
+NB : 
+- untuk mengambil data produk yang terjual hari ini.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/order/today/productsold
+type     : GET
+params   : -
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "products": [
+            {
+                "id": 1,
+                "name": "Kastengel",
+                "price": 60000,
+                "quantity": 2,
+                "subTotal": 120000,
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

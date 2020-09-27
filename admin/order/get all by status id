@@ -1,0 +1,35 @@
+NB : 
+- untuk mengambil pesanan/transaksi berdasarkan statusnya.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/order/status
+type     : GET
+params   : {
+    "orderStatusId": 1,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "order": [
+            {
+                "orderNumber": "130495302572",
+                "customer": "Budi Syail",
+                "date": "16/10/2020",
+                "status": "Menunggu Pembayaran",
+                "totalPayment": 237500,
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

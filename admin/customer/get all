@@ -1,0 +1,35 @@
+NB : 
+- untuk mengambil semua data customer.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/customer
+type     : GET
+params   : -
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "customers": [
+            {
+                "id": 1,
+                "name": "Albert Kurniawan",
+                "email": "albert@gmail.com",
+                "phoneNumber": "089532501522",
+                "province": "Sumatra Selatan",
+                "city": "Palembang",
+                "region": "Ilir Timur II",
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

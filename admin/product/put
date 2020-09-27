@@ -1,0 +1,30 @@
+NB : 
+- untuk mengubah data produk tertentu.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/product
+type     : PUT
+params   : {
+    "id": 1,
+    "name": "Kastengel",
+    "price": 60000,
+    "description": "Kue home made yang sangat lezat.",
+    "categoryId": 6,
+    "subCategoryId": 3,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}

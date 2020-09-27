@@ -1,0 +1,36 @@
+NB : 
+- untuk mengambil data pegawai tertentu.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/employee/id
+type     : GET
+params   : -
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "employee": [
+            {
+                "id": 1,
+                "name": "Albert Kurniawan",
+                "email": "albert@gmail.com",
+                "phoneNumber": "089532501522",
+                "addresss": "Jalan Cendrawasih No 15C",
+                "province": "Sumatra Selatan",
+                "city": "Palembang",
+                "region": "Ilir Timur II",
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

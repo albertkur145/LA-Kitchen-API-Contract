@@ -1,0 +1,30 @@
+NB : 
+- untuk mengambil call dari user.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/cs/call
+type     : GET
+params   : -
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "call": [
+            {
+                "id": 1,
+                "customer": "Albert",
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

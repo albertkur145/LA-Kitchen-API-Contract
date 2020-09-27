@@ -1,0 +1,35 @@
+NB : 
+- untuk mengambil data user.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/user
+type     : GET
+params   : -
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "user": {
+            "name": "Albert Kurniawan",
+            "email": "albertkur@gmail.com",
+            "phoneNumber": "081297541232",
+            "address": "Jalan Ribawa Yunsudiro No 4E",
+            "province": "Sumatra Selatan",
+            "city": "Palembang",
+            "region": "Ilir Barat II",
+            "status": "Active",
+            "role": "ROLE_USER",
+        },
+    },
+    "paging": null,
+    "errors": null,
+}

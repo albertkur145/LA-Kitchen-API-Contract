@@ -1,0 +1,26 @@
+NB : 
+- untuk mengangkat call dari user.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/cs/call
+type     : POST
+params   : {
+    "id": 1,
+    "csId": 1,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}

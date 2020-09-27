@@ -1,0 +1,34 @@
+NB : 
+- untuk mengambil semua pesanan yang sudah selesai / batal.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/order/history
+type     : GET
+params   : {
+    "userId": 1,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "orders": [
+            {
+                "orderNumber": "196324758507",
+                "date": "12 September 2020",
+                "totalPayment": 127500,
+                "status": "Selesai",
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

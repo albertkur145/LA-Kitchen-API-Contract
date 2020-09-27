@@ -1,0 +1,25 @@
+NB : 
+- untuk menghapus akun pegawai.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/employee
+type     : DELETE
+params   : {
+    "id": 1,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}

@@ -1,0 +1,38 @@
+NB : 
+- untuk mengambil pendapatan bulanan.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/report/income/month
+type     : GET
+params   : {
+    "year": "2020",
+    "month": "4",
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "report": [
+            {
+                "date": "21/05/2020",
+                "income": 70000, 
+            },
+            {
+                "date": "23/05/2020",
+                "income": 125000, 
+            },
+        ],
+        "total": 1125600,
+    },
+    "paging": null,
+    "errors": null,
+}

@@ -1,0 +1,25 @@
+NB : 
+- untuk menandakan sudah membaca sebuah pesan.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/cs/message/read
+type     : POST
+params   : {
+    "callId": 2,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}

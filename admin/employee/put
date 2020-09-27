@@ -1,0 +1,32 @@
+NB : 
+- untuk mengubah akun pegawai.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/employee
+type     : PUT
+params   : {
+    "id": 1,
+    "name": "Albert Kurniawan",
+    "email": "albert@gmail.com",
+    "phoneNumber": "089532501522",
+    "address": "Jalan Surya Jaya Gg Dahlia No 15A",
+    "province": "Sumatra Selatan",
+    "city": "Palembang",
+    "region": "Ilir Timur II",
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}

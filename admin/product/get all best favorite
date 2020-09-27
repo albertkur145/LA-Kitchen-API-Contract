@@ -1,0 +1,33 @@
+NB : 
+- untuk mengambil data produk terfavorit (10 teratas).
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/product/favorite
+type     : GET
+params   : -
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "products": [
+            {
+                "id": 1,
+                "name": "Kastengel",
+                "category": "Mie & Pasta",
+                "subCategory": "Mie Instan",
+                "popularity": 62,
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

@@ -1,0 +1,33 @@
+NB : 
+- untuk mengambil semua sub kategori.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/subcategory
+type     : GET
+params   : {
+    "categoryId": 1,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "subCategories": [
+            {
+                "id": 1,
+                "name": "Mie Instan",
+                "categoryId": 1,
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

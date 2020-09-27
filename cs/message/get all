@@ -1,0 +1,37 @@
+NB : 
+- untuk mengambil semua pesan.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/cs/message
+type     : GET
+params   : {
+    "callId": 2,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "messages": [
+            {
+                "id": 1,
+                "from": 4,
+                "to": 1,
+                "callId": 1,
+                "message": "Halo, saya ingin mengajukan pertanyaan.",
+                "is_read": 0,
+                "time": 10.32,
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

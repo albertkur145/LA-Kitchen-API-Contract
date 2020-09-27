@@ -1,0 +1,37 @@
+NB : 
+- untuk mengambil semua data produk.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/product
+type     : GET
+params   : -
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "products": [
+            {
+                "id": 1,
+                "name": "Kastengel",
+                "price": 60000,
+                "description": "Kue home made yang sangat lezat.",
+                "category": "Mie & Pasta",
+                "subCategory": "Mie Instan",
+                "popularity": 25,
+                "rating": 4.37,
+                "sold": 62,
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

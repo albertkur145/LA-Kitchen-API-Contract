@@ -1,0 +1,47 @@
+NB : 
+- untuk mengambil detail penilaian produk tertentu.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/assessment
+type     : GET
+params   : {
+    "productId": 1,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "product": "Samyang Cheese 250gr",
+        "rate": {
+            "five": 25,
+            "four": 7,
+            "three": 1,
+            "two": 0,
+            "one": 0, 
+        },
+        "totalAssessments": 156,
+        "evaluators": 33,
+        "rating": 4.52,
+        "totalComments": 25,
+        "assessments": [
+            {
+                "id": 1,
+                "user": "Budi Rian",
+                "rate": 4,
+                "comment": "Sangat lezat.",
+                "date": "19/02/2020", 
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

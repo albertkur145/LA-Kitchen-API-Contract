@@ -1,0 +1,29 @@
+NB : 
+- untuk menambahkan produk baru ke dalam sistem.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/product
+type     : POST
+params   : {
+    "name": "Kastengel",
+    "price": 60000,
+    "description": "Kue home made yang sangat lezat.",
+    "categoryId": 6,
+    "subCategoryId": 3,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}

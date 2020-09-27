@@ -1,0 +1,37 @@
+NB : 
+- untuk mengambil pendapatan tahunan.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/report/income/annual
+type     : GET
+params   : {
+    "year": "2020",
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "report": [
+            {
+                "month": "Januari",
+                "income": 200000, 
+            },
+            {
+                "month": "Februari",
+                "income": 75000, 
+            },
+        ],
+        "total": 3750200,
+    },
+    "paging": null,
+    "errors": null,
+}

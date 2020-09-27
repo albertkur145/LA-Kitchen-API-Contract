@@ -1,0 +1,38 @@
+NB :
+- untuk melakukan login, mencakup semua role.
+
+
+Header
+- Content-Type   : application/json
+
+
+url      : http://localhost:{port}/api/auth/login
+type     : POST
+params   : {
+    "email": "albertkur@gmail.com",
+    "password": "123",
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "token": "eJhbGciJIzUxMiJ9yJyb2xlIjpbIlJPTEfVVNFUiJdLCJIi",
+        "user": {
+            "name": "Albert Kurniawan",
+            "email": "albertkur@gmail.com",
+            "phoneNumber": "081297541232",
+            "address": "Jalan Ribawa Yunsudiro No 4E",
+            "province": "Sumatra Selatan",
+            "city": "Palembang",
+            "region": "Ilir Barat II",
+            "status": "Active",
+            "role": "ROLE_USER",
+        },
+    },
+    "paging": null,
+    "errors": null,
+}

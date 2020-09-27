@@ -1,0 +1,44 @@
+NB : 
+- untuk mengambil detail produk tertentu.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/product/id
+type     : GET
+params   : {
+    "id": 1,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "product": [
+            "id": 1,
+            "name": "Indomie Goreng Rasa Rendang 10 Pcs",
+            "price": 25000,
+            "description": "Rasa yang sangat nikmat ketika dimakan",
+            "categoryId": 6,
+            "subCategoryId": 3,
+            "photo_links": [
+                {
+                    "id": 1,
+                    "link": "www.google.co.id",
+                },
+                {
+                    "id": 2,
+                    "link": "www.google.co.id",
+                },
+            ],
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

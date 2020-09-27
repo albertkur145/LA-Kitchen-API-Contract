@@ -1,0 +1,33 @@
+NB : 
+- untuk mengambil data produk terlaris (10 teratas).
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/product/bestselling
+type     : GET
+params   : -
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "products": [
+            {
+                "id": 1,
+                "name": "Kastengel",
+                "category": "Mie & Pasta",
+                "subCategory": "Mie Instan",
+                "sold": 62,
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

@@ -1,0 +1,25 @@
+NB : 
+- untuk mendaftarkan akun baru user.
+
+
+Header
+- Content-Type   : application/json
+
+
+url      : http://localhost:{port}/api/user
+type     : POST
+params   : {
+    "email": "albertkur@gmail.com",
+    "password": "123",
+}
+
+
+RESPONSE
+--------
+{
+    "code": 201,
+    "status": "ACCEPTED",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}
