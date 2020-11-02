@@ -19,6 +19,10 @@ RESPONSE
     "code": 200,
     "status": "OK",
     "data": {
+        "category": {
+            "id": 1,
+            "name": "Kue",
+        },
         "products": [
             {
                 "id": 1,
