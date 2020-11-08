@@ -1,15 +1,15 @@
 NB : 
-- untuk mengambil semua data produk berdasarkan sub kategori.
+- untuk mengambil semua data produk berdasarkan nama.
 
 
 Header
 - Content-Type   : application/json
 
 
-url      : http://localhost:{port}/api/product/subcategory
+url      : http://localhost:{port}/api/product/name
 type     : GET
 params   : {
-    "subCategoryId": 2,
+    "productName": 'Mie Goreng',
 }
 
 
@@ -19,7 +19,6 @@ RESPONSE
     "code": 200,
     "status": "OK",
     "data": {
-        "title": "Kue Basah",
         "products": [
             {
                 "id": 1,
