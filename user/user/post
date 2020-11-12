@@ -1,4 +1,4 @@
-NB : 
+NB :
 - untuk mendaftarkan akun baru user.
 
 
@@ -10,6 +10,7 @@ url      : http://localhost:{port}/api/user
 type     : POST
 params   : {
     "email": "albertkur@gmail.com",
+    "phoneNumber": "081254251254",
     "password": "123",
 }
 
@@ -17,7 +18,7 @@ params   : {
 RESPONSE
 --------
 {
-    "code": 201,
+    "code": 200,
     "status": "ACCEPTED",
     "data": null,
     "paging": null,
