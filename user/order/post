@@ -1,0 +1,39 @@
+NB : 
+- untuk menambah pesanan baru.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/order
+type     : GET
+params   : {
+    "userId": 1,
+    "products": [
+        {
+            "id": 1,
+            "price": 75000,
+            "quantity": 5,
+            "note": "Tambahin garam",
+        },
+        {
+            "id": 5,
+            "price": 30000,
+            "quantity": 2,
+            "note": "-",
+        },
+    ],
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}

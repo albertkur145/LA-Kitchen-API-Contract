@@ -22,6 +22,7 @@ RESPONSE
     "data": {
         "token": "eJhbGciJIzUxMiJ9yJyb2xlIjpbIlJPTEfVVNFUiJdLCJIi",
         "user": {
+            "id": 1,
             "name": "Albert Kurniawan",
             "email": "albertkur@gmail.com",
             "phoneNumber": "081297541232",
