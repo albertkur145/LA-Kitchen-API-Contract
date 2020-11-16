@@ -1,3 +1,5 @@
+#DONE
+
 NB : 
 - untuk mengambil detail pesanan tertentu.
 
@@ -24,7 +26,10 @@ RESPONSE
             "orderNumber": "196324758507",
             "date": "12 September 2020",
             "totalPayment": 127500,
-            "status": "Sedang Dipersiapkan",
+            "status": {
+                "id": 2,
+                "name": "Sedang Dipersiapkan",
+            },
             "products": [
                 {
                     "id": 1,
