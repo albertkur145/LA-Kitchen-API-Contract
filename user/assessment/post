@@ -10,6 +10,7 @@ Header
 url      : http://localhost:{port}/api/assessment
 type     : POST
 params   : {
+    "orderNumber": "196324758507",
     "productId": 1,
     "userId": 1,
     "rate": 3,

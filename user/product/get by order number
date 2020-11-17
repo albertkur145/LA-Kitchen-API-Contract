@@ -1,3 +1,5 @@
+#DONE
+
 NB : 
 - untuk mengambil semua data produk yang dibeli.
 - hanya transaksi yang sudah selesai
@@ -22,6 +24,15 @@ RESPONSE
     "code": 200,
     "status": "OK",
     "data": {
+        "order": {
+            "orderNumber": "103485759021",
+            "date": "29 September 2020",
+            "totalPayment": 220000,
+            "status": {
+                "id": 1,
+                "name": "Selesai",
+            },
+        },
         "products": [
             {
                 "id": 1,
