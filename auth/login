@@ -29,6 +29,7 @@ RESPONSE
             "address": "Jalan Ribawa Yunsudiro No 4E",
             "province": "Sumatra Selatan",
             "city": "Kota Palembang",
+            "registerAt": "Apr 2020",
             "status": "Active",
             "role": "ROLE_USER",
         },
