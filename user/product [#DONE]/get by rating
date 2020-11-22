@@ -1,3 +1,5 @@
+#DONE
+
 NB : 
 - untuk mengambil semua data produk yang diurutkan berdasarkan rating.
 
@@ -17,6 +19,7 @@ RESPONSE
     "code": 200,
     "status": "OK",
     "data": {
+        "title": "Rating Teratas",
         "products": [
             {
                 "id": 1,
