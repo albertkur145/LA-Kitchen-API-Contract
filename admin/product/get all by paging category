@@ -1,5 +1,5 @@
 NB : 
-- untuk mengambil data produk terfavorit (5 teratas) berdasarkan kategori.
+- untuk mengambil semua data produk berdasarkan kategori tertentu.
 
 
 Header
@@ -7,9 +7,10 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/product/favorite/category
+url      : http://localhost:{port}/api/admin/product/category
 type     : GET
 params   : {
+    "page": 1,
     "categoryId": 1,
 }
 
@@ -24,12 +25,20 @@ RESPONSE
             {
                 "id": 1,
                 "name": "Kastengel",
+                "price": 60000,
+                "description": "Kue home made yang sangat lezat.",
                 "category": "Mie & Pasta",
                 "subCategory": "Mie Instan",
-                "popularity": 62,
+                "popularity": 25,
+                "rating": 4.37,
+                "sold": 62,
             },
         ],
     },
-    "paging": null,
+    "paging": {
+        "page": 1,
+        "count": 150,
+        "view": 10,
+    },
     "errors": null,
 }
