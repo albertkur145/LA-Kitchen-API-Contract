@@ -9,7 +9,9 @@ Header
 
 url      : http://localhost:{port}/api/admin/product
 type     : GET
-params   : -
+params   : {
+    "page": 1,
+}
 
 
 RESPONSE
@@ -32,6 +34,10 @@ RESPONSE
             },
         ],
     },
-    "paging": null,
+    "paging": {
+        "page": 1,
+        "count": 150,
+        "view": 10,
+    },
     "errors": null,
 }

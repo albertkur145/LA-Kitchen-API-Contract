@@ -1,3 +1,5 @@
+#DONE
+
 NB : 
 - untuk mengambil berbagai kebutuhan di dashboard.
 
@@ -32,7 +34,15 @@ RESPONSE
         "others": {
             "newUsers": 24,
             "users": 237,
-            "employees": 6,
+        },
+        "weeklyReport": {
+          "2020-11-21": "67000",
+          "2020-11-22": "75000",
+          "2020-11-23": "93750",
+          "2020-11-24": "12750",
+          "2020-11-25": "44800",
+          "2020-11-26": "34500",
+          "2020-11-27": "136200",
         },
     },
     "paging": null,
