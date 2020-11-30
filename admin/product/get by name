@@ -1,7 +1,7 @@
 #DONE
 
 NB : 
-- untuk mengambil semua data produk.
+- untuk mengambil data produk berdasarkan nama.
 
 
 Header
@@ -9,10 +9,10 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/product
+url      : http://localhost:{port}/api/admin/product/name
 type     : GET
 params   : {
-    "page": 1,
+    "name": "Kastengel",
 }
 
 
@@ -37,7 +37,7 @@ RESPONSE
     },
     "paging": {
         "page": 1,
-        "count": 150,
+        "count": 1,
         "view": 10,
     },
     "errors": null,

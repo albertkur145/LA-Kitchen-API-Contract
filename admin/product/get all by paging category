@@ -1,3 +1,5 @@
+#DONE
+
 NB : 
 - untuk mengambil semua data produk berdasarkan kategori tertentu.
 
@@ -26,7 +28,6 @@ RESPONSE
                 "id": 1,
                 "name": "Kastengel",
                 "price": 60000,
-                "description": "Kue home made yang sangat lezat.",
                 "category": "Mie & Pasta",
                 "subCategory": "Mie Instan",
                 "popularity": 25,
