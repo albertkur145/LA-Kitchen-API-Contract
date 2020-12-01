@@ -1,0 +1,40 @@
+#DONE
+
+NB : 
+- untuk mengambil penjualan dan pendapatan hari ini.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/report/salestoday
+type     : GET
+params   : {
+    "page": 1,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "products": [
+            {
+                "id": 1,
+                "name": "Kastengel",
+                "price": 60000,
+                "sold": 62,
+            },
+        ],
+    },
+    "paging": {
+        "page": 1,
+        "count": 12,
+        "view": 5,
+    },
+    "errors": null,
+}
