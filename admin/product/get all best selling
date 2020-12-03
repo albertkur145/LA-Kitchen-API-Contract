@@ -1,3 +1,5 @@
+#DONE
+
 NB : 
 - untuk mengambil data produk terlaris (10 teratas).
 
@@ -22,8 +24,6 @@ RESPONSE
             {
                 "id": 1,
                 "name": "Kastengel",
-                "category": "Mie & Pasta",
-                "subCategory": "Mie Instan",
                 "sold": 62,
             },
         ],
