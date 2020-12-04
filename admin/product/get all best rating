@@ -1,3 +1,5 @@
+#DONE
+
 NB : 
 - untuk mengambil data produk rating tertinggi (10 teratas).
 
@@ -22,10 +24,6 @@ RESPONSE
             {
                 "id": 1,
                 "name": "Kastengel",
-                "category": "Mie & Pasta",
-                "subCategory": "Mie Instan",
-                "evaluators": 17,
-                "comments": 21
                 "rating": 4.72,
             },
         ],
