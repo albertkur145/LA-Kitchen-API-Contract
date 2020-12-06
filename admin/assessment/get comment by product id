@@ -1,0 +1,46 @@
+NB : 
+- untuk mengambil detail penilaian produk tertentu.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/assessment/comment
+type     : GET
+params   : {
+    "productId": 1,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "comments": [
+            {
+                "id": 1,
+                "username": "Budi Rian",
+                "rate": 4,
+                "comment": 'Bagus sekali',
+                "date": "19/02/2020",
+            },
+            {
+                "id": 2,
+                "username": "Andre Wijaya",
+                "rate": 5,
+                "comment": 'Pengiriman cepat',
+                "date": "21/02/2020",
+            },
+        ],
+    },
+    "paging": {
+        "page": 1,
+        "count": 50,
+        "view": 3,
+    },
+    "errors": null,
+}
