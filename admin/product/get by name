@@ -13,6 +13,7 @@ url      : http://localhost:{port}/api/admin/product/name
 type     : GET
 params   : {
     "name": "Kastengel",
+    "page": 1,
 }
 
 

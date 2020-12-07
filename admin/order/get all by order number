@@ -1,5 +1,5 @@
 NB : 
-- untuk mengambil pesanan/transaksi hari ini.
+- untuk mengambil semua pesanan/transaksi berdasarkan nomor pesanan.
 
 
 Header
@@ -7,9 +7,12 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/order/today
+url      : http://localhost:{port}/api/admin/order/search
 type     : GET
-params   : -
+params   : {
+    "orderNumber": 123,
+    "page": 1,
+}
 
 
 RESPONSE
@@ -21,13 +24,16 @@ RESPONSE
         "order": [
             {
                 "orderNumber": "130495302572",
-                "customer": "Budi Syail",
                 "date": "16/10/2020",
                 "status": "Menunggu Pembayaran",
                 "totalPayment": 237500,
             },
         ],
     },
-    "paging": null,
+    "paging": {
+        "page": 1,
+        "count": 1,
+        "view": 10,
+    },
     "errors": null,
 }

@@ -1,5 +1,5 @@
 NB : 
-- untuk mengambil pesanan/transaksi yang sudah selesai ataupun dibatalkan.
+- untuk mengambil semua pesanan/transaksi.
 
 
 Header
@@ -7,9 +7,11 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/order/history
+url      : http://localhost:{port}/api/admin/order
 type     : GET
-params   : -
+params   : {
+    "page": 1,
+}
 
 
 RESPONSE
@@ -21,13 +23,16 @@ RESPONSE
         "order": [
             {
                 "orderNumber": "130495302572",
-                "customer": "Budi Syail",
                 "date": "16/10/2020",
-                "status": "Dibatalkan",
+                "status": "Menunggu Pembayaran",
                 "totalPayment": 237500,
             },
         ],
     },
-    "paging": null,
+    "paging": {
+        "page": 1,
+        "count": 1,
+        "view": 10,
+    },
     "errors": null,
 }

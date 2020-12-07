@@ -11,6 +11,7 @@ url      : http://localhost:{port}/api/admin/order/status
 type     : GET
 params   : {
     "orderStatusId": 1,
+    "page": 1,
 }
 
 
@@ -23,13 +24,16 @@ RESPONSE
         "order": [
             {
                 "orderNumber": "130495302572",
-                "customer": "Budi Syail",
                 "date": "16/10/2020",
                 "status": "Menunggu Pembayaran",
                 "totalPayment": 237500,
             },
         ],
     },
-    "paging": null,
+    "paging": {
+        "page": 1,
+        "count": 1,
+        "view": 10,
+    },
     "errors": null,
 }

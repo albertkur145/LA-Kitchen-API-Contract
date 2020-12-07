@@ -1,5 +1,5 @@
 NB : 
-- untuk mengambil data produk yang terjual hari ini.
+- untuk mengambil semua status pesanan.
 
 
 Header
@@ -7,7 +7,7 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/order/today/productsold
+url      : http://localhost:{port}/api/admin/orderstatus
 type     : GET
 params   : -
 
@@ -18,13 +18,10 @@ RESPONSE
     "code": 200,
     "status": "OK",
     "data": {
-        "products": [
+        "status": [
             {
                 "id": 1,
-                "name": "Kastengel",
-                "price": 60000,
-                "quantity": 2,
-                "subTotal": 120000,
+                "name": "Menunggu Pembayaran",
             },
         ],
     },
