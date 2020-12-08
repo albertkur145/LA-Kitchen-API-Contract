@@ -1,8 +1,5 @@
-#DONE
-
 NB : 
-- untuk mengambil semua pesanan/transaksi berdasarkan nomor pesanan
-- khusus pesanan yang sudah fix diproses.
+- untuk mengambil semua pesanan/transaksi yang belum dikonfirmasi.
 
 
 Header
@@ -10,10 +7,9 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/order/search
+url      : http://localhost:{port}/api/admin/order/confirmation
 type     : GET
 params   : {
-    "orderNumber": 123,
     "page": 1,
 }
 
@@ -29,8 +25,8 @@ RESPONSE
                 "orderNumber": "130495302572",
                 "date": "16/10/2020",
                 "status": {
-                    "id": 2,
-                    "name": "Sedang Dipersiapkan",
+                    "id": 1,
+                    "name": "Menunggu Pembayaran",
                 },
                 "totalPayment": 237500,
             },

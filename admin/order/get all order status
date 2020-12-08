@@ -1,5 +1,7 @@
+#DONE
+
 NB : 
-- untuk mengambil semua status pesanan.
+- untuk mengambil semua status pesanan kecuali yang belum dikonfirmasi.
 
 
 Header
@@ -20,8 +22,8 @@ RESPONSE
     "data": {
         "status": [
             {
-                "id": 1,
-                "name": "Menunggu Pembayaran",
+                "id": 2,
+                "name": "Sedang Dipersiapkan",
             },
         ],
     },

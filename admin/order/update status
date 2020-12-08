@@ -1,0 +1,28 @@
+#DONE
+
+NB : 
+- untuk mengupdate status pesanan/transaksi.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/order
+type     : PUT
+params   : {
+    "orderNumber": "1252057941520",
+    "orderStatusId": 3,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}

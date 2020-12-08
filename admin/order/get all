@@ -1,5 +1,7 @@
+#DONE
+
 NB : 
-- untuk mengambil semua pesanan/transaksi.
+- untuk mengambil semua pesanan/transaksi yang sudah fix diproses.
 
 
 Header
@@ -24,7 +26,10 @@ RESPONSE
             {
                 "orderNumber": "130495302572",
                 "date": "16/10/2020",
-                "status": "Menunggu Pembayaran",
+                "status": {
+                    "id": 2,
+                    "name": "Sedang dipersiapkan",
+                },
                 "totalPayment": 237500,
             },
         ],

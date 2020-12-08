@@ -1,0 +1,25 @@
+NB : 
+- untuk mengkonfirmasi pesanan/transaksi agar diproses.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/order/confirmation
+type     : PUT
+params   : {
+    "orderNumber": "1252057941520",
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}
