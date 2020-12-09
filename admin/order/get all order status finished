@@ -1,0 +1,36 @@
+#DONE
+
+NB : 
+- untuk mengambil semua status pesanan yang sudah tidak diproses.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/orderstatus/finished
+type     : GET
+params   : -
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "status": [
+            {
+                "id": 5,
+                "name": "Selesai",
+            },
+            {
+                "id": 6,
+                "name": "Dibatalkan",
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

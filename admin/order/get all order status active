@@ -1,7 +1,7 @@
 #DONE
 
 NB : 
-- untuk mengambil semua status pesanan kecuali yang belum dikonfirmasi.
+- untuk mengambil semua status pesanan yang aktif.
 
 
 Header
@@ -9,7 +9,7 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/orderstatus
+url      : http://localhost:{port}/api/admin/orderstatus/active
 type     : GET
 params   : -
 
