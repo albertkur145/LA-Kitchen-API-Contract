@@ -9,7 +9,7 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/order/confirmation
+url      : http://localhost:{port}/api/admin/order/unprocessed
 type     : PUT
 params   : {
     "orderNumber": "1252057941520",

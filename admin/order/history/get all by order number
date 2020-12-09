@@ -1,0 +1,45 @@
+#DONE
+
+NB : 
+- untuk mengambil semua pesanan/transaksi berdasarkan nomor pesanan.
+- khusus pesanan yang sudah tidak lagi diproses.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/order/search/history
+type     : GET
+params   : {
+    "orderNumber": 123,
+    "page": 1,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "order": [
+            {
+                "orderNumber": "130495302572",
+                "date": "16/10/2020",
+                "status": {
+                    "id": 5,
+                    "name": "Selesai",
+                },
+                "totalPayment": 237500,
+            },
+        ],
+    },
+    "paging": {
+        "page": 1,
+        "count": 1,
+        "view": 10,
+    },
+    "errors": null,
+}

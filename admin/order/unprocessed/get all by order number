@@ -1,7 +1,8 @@
 #DONE
 
 NB : 
-- untuk mengambil semua pesanan/transaksi yang belum dikonfirmasi.
+- untuk mengambil semua pesanan/transaksi berdasarkan nomor pesanan.
+- khusus pesanan yang belum dikonfirmasi.
 
 
 Header
@@ -9,9 +10,10 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/order/confirmation
+url      : http://localhost:{port}/api/admin/order/search/unprocessed
 type     : GET
 params   : {
+    "orderNumber": 123,
     "page": 1,
 }
 
