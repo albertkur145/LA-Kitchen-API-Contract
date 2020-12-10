@@ -9,7 +9,7 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/orderstatus/finished
+url      : http://localhost:{port}/api/admin/orderstatus/history
 type     : GET
 params   : -
 
