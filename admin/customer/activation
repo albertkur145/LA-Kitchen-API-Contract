@@ -1,5 +1,5 @@
 NB : 
-- untuk menonaktifkan akun customer.
+- untuk membuka blokir akun customer.
 
 
 Header
@@ -8,7 +8,7 @@ Header
 
 
 url      : http://localhost:{port}/api/admin/customer
-type     : DELETE
+type     : PUT
 params   : {
     "id": 1,
 }
