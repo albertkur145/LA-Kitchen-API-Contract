@@ -1,5 +1,7 @@
+#DONE
+
 NB : 
-- untuk mengambil semua data customer berdasarkan status.
+- untuk mengambil semua data customer berdasarkan nama.
 
 
 Header
@@ -7,11 +9,11 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/customer/status
+url      : http://localhost:{port}/api/admin/customer/search
 type     : GET
 params   : {
     "page": 1,
-    "userStatusId": 1,
+    "name": "Albert",
 }
 
 
@@ -34,6 +36,7 @@ RESPONSE
                     "id": 1,
                     "name": "Aktif",        
                 },
+                "registerAt": "15/02/2020",
             },
         ],
     },

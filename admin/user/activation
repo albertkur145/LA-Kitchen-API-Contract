@@ -1,5 +1,7 @@
+#DONE
+
 NB : 
-- untuk menghapus akun pegawai.
+- untuk mengaktifkan / menonaktifkan akun user.
 
 
 Header
@@ -7,10 +9,11 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/employee
-type     : DELETE
+url      : http://localhost:{port}/api/admin/user/activation
+type     : PUT
 params   : {
     "id": 1,
+    "userStatusId": 1,
 }
 
 

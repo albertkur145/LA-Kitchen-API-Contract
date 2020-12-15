@@ -1,0 +1,36 @@
+#DONE
+
+NB : 
+- untuk mengambil semua status user.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/user/status
+type     : GET
+params   : -
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "status": [
+            {
+                "id": 1,
+                "name": "Aktif",
+            },
+            {
+                "id": 2,
+                "name": "Diblokir",
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}
