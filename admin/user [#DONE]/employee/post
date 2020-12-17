@@ -1,5 +1,7 @@
+#DONE
+
 NB : 
-- untuk mengubah akun pegawai.
+- untuk menambah akun pegawai.
 
 
 Header
@@ -8,15 +10,15 @@ Header
 
 
 url      : http://localhost:{port}/api/admin/employee
-type     : PUT
+type     : POST
 params   : {
-    "id": 1,
     "name": "Albert Kurniawan",
     "email": "albert@gmail.com",
     "phoneNumber": "089532501522",
     "address": "Jalan Surya Jaya Gg Dahlia No 15A",
     "province": "Sumatra Selatan",
     "city": "Palembang",
+    "password": "123",
 }
 
 
