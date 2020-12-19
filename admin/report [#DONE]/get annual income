@@ -1,5 +1,7 @@
+#DONE
+
 NB : 
-- untuk mengambil pendapatan bulanan.
+- untuk mengambil pendapatan tahunan.
 
 
 Header
@@ -7,11 +9,10 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/report/income/month
+url      : http://localhost:{port}/api/admin/report/income/annual
 type     : GET
 params   : {
     "year": "2020",
-    "month": "4",
 }
 
 
@@ -23,15 +24,15 @@ RESPONSE
     "data": {
         "report": [
             {
-                "date": "21/05/2020",
-                "income": 70000, 
+                "month": "Jan",
+                "income": 200000, 
             },
             {
-                "date": "23/05/2020",
-                "income": 125000, 
+                "month": "Feb",
+                "income": 75000, 
             },
         ],
-        "total": 1125600,
+        "total": 3750200,
     },
     "paging": null,
     "errors": null,
