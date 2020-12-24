@@ -1,0 +1,29 @@
+#DONE
+
+NB : 
+- untuk mengambil jumlah produk yang ada di keranjang user.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/cart/count
+type     : GET
+params   : {
+    "userId": 1,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "productSum": 4,
+    },
+    "paging": null,
+    "errors": null,
+}
