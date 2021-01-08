@@ -16,7 +16,6 @@ params   : {
     "name": "Kastengel",
     "price": 60000,
     "description": "Kue home made yang sangat lezat.",
-    "categoryId": 6,
     "subCategoryId": 3,
 }
 

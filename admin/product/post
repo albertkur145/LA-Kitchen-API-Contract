@@ -1,4 +1,4 @@
-#DONE
+#DONE #Backend
 
 NB : 
 - untuk menambahkan produk baru ke dalam sistem.
@@ -15,7 +15,6 @@ params   : {
     "name": "Kastengel",
     "price": 60000,
     "description": "Kue home made yang sangat lezat.",
-    "categoryId": 6,
     "subCategoryId": 3,
 }
 
@@ -25,7 +24,9 @@ RESPONSE
 {
     "code": 200,
     "status": "OK",
-    "data": null,
+    "data": {
+        "productId": 1,
+    },
     "paging": null,
     "errors": null,
 }
