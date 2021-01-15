@@ -1,4 +1,4 @@
-#DONE
+#DONE #Backend
 
 NB : 
 - untuk menambah pesanan baru.
@@ -16,13 +16,11 @@ params   : {
     "products": [
         {
             "id": 1,
-            "price": 75000,
             "quantity": 5,
             "note": "Tambahin garam",
         },
         {
             "id": 5,
-            "price": 30000,
             "quantity": 2,
             "note": "-",
         },
