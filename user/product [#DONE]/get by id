@@ -22,6 +22,16 @@ RESPONSE
     "code": 200,
     "status": "OK",
     "data": {
+        "path": {
+            "category": {
+                "id": 2,
+                "name": "Mie & Pasta",
+            },
+            "subCategory": {
+                "id": 4,
+                "name": "Mie Instan",
+            },
+        },
         "product": {
             "id": 1,
             "name": "Indomie Goreng Rasa Rendang 10 Pcs",

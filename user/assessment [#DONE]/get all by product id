@@ -1,4 +1,4 @@
-#DONE
+#DONE #Backend
 
 NB : 
 - untuk mengambil semua penilaian pada produk tertentu.
@@ -21,16 +21,6 @@ RESPONSE
     "code": 200,
     "status": "OK",
     "data": {
-        "path": {
-            "category": {
-                "id": 2,
-                "name": "Mie & Pasta",
-            },
-            "subCategory": {
-                "id": 4,
-                "name": "Mie Instan",
-            },
-        },
         "assessment": [
             {
                 "id": 1,
