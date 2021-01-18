@@ -1,0 +1,26 @@
+#DONE #Backend #Integrated
+
+NB : 
+- untuk menambahkan jumlah terlihat pada produk tertentu.
+
+
+Header
+- Content-Type   : application/json
+
+
+url      : http://localhost:{port}/api/product/seen
+type     : PUT
+params   : {
+    "productId": 1,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}

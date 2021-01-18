@@ -1,0 +1,30 @@
+#DONE #Backend #Integrated
+
+NB : 
+- untuk menambahkan produk ke dalam keranjang.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/cart
+type     : POST
+params   : {
+    "userId": 1,
+    "productId": 1,
+    "quantity": 3,
+    "note": "-",
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}

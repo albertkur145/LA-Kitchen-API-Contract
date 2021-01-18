@@ -1,0 +1,31 @@
+#DONE #Backend #Integrated
+
+NB : 
+- untuk memberikan penilaian produk.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/assessment
+type     : POST
+params   : {
+    "orderNumber": "196324758507",
+    "productId": 1,
+    "userId": 1,
+    "rate": 3,
+    "comment": "Bagus sekali",
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}

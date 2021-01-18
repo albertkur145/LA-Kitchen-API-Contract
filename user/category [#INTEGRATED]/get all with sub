@@ -1,0 +1,47 @@
+#DONE #Backend #Integrated
+
+NB : 
+- untuk mengambil semua data kategori beserta sub kategorinya.
+
+
+Header
+- Content-Type   : application/json
+
+
+url      : http://localhost:{port}/api/categoriesandsub
+type     : GET
+params   : -
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "categories": [
+            {
+                "id": 1,
+                "name": "Makanan Ringan",
+                "subCategories": [
+                    {
+                        "id": 1,
+                        "name": "Kacang",
+                    },
+                ],
+            },
+            {
+                "id": 2,
+                "name": "Kue",
+                "subCategories": [
+                    {
+                        "id": 6,
+                        "name": "Kue Kering",
+                    },
+                ],
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

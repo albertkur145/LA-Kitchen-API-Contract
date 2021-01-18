@@ -1,0 +1,37 @@
+#DONE #Backend #Integrated
+
+NB : 
+- untuk mengambil detail product dari pesanan tertentu.
+- untuk keperluan penilaian produk.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/order/productdetail
+type     : GET
+params   : {
+    "orderNumber": "196324758507",
+    "productId": 1,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "orderNumber": "196324758507",
+        "date": "12 September 2020",
+        "product": {
+            "id": 1,
+            "name": "Indomie Goreng Rasa Rendang 10 Pcs",
+            "photo_link": "www.google.co.id",
+        },
+    },
+    "paging": null,
+    "errors": null,
+}

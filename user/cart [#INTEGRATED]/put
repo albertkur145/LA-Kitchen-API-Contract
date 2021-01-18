@@ -1,0 +1,30 @@
+#DONE #Backend #Integrated
+
+NB : 
+- untuk mengedit produk yang ada di dalam keranjang.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/cart
+type     : PUT
+params   : {
+    "userId": 1,
+    "productId": 1,
+    "quantity": 5,
+    "note": "Bungkus yang rapi ya.",
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}

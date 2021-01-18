@@ -1,0 +1,46 @@
+#DONE #Backend #Integrated
+
+NB : 
+- untuk mengambil semua data produk berdasarkan sub kategori.
+
+
+Header
+- Content-Type   : application/json
+
+
+url      : http://localhost:{port}/api/product/subcategory
+type     : GET
+params   : {
+    "subCategoryId": 2,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "title": "Kue Basah",
+        "products": [
+            {
+                "id": 1,
+                "name": "Kue Talan Pandan",
+                "price": 60000,
+                "photo_link": "www.google.co.id",
+                "rating": 4.73,
+                "evaluators": 127,
+            },
+            {
+                "id": 2,
+                "name": "Kue Lapis",
+                "price": 95000,
+                "photo_link": "www.google.co.id",
+                "rating": 4.25,
+                "evaluators": 96,
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}

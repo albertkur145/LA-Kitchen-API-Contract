@@ -1,0 +1,27 @@
+#DONE #Backend #Integrated
+
+NB : 
+- untuk membatalkan pesanan tertentu.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/order
+type     : DELETE
+params   : {
+    "orderNumber": "196324758507",
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": null,
+    "paging": null,
+    "errors": null,
+}

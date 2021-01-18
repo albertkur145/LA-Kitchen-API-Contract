@@ -1,0 +1,38 @@
+#DONE #Backend #Integrated
+
+NB : 
+- untuk mengambil isi semua keranjang user.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/cart
+type     : GET
+params   : {
+    "userId": 1,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "products": [
+            {
+                "id": 1,
+                "name": "Kue Talan Pandan",
+                "price": 60000,
+                "photo_link": "www.google.co.id",
+                "quantity": 5,
+                "note": "Minta topping yang banyak ya",
+            },
+        ],
+    },
+    "paging": null,
+    "errors": null,
+}
