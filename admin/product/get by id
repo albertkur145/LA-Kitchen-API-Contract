@@ -1,4 +1,4 @@
-#DONE
+#DONE #Backend
 
 NB : 
 - untuk mengambil detail produk tertentu.
@@ -29,6 +29,7 @@ RESPONSE
             "description": "Rasa yang sangat nikmat ketika dimakan",
             "categoryId": 6,
             "subCategoryId": 3,
+            "isActive": 1,
             "photo_links": [
                 {
                     "id": 1,

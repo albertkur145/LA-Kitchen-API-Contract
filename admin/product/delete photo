@@ -1,7 +1,7 @@
-#DONE #Backend
+#Backend
 
 NB : 
-- untuk mengaktifkan produk tertentu.
+- untuk menghapus foto produk dari sistem.
 
 
 Header
@@ -9,10 +9,10 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/product/activation
-type     : PUT
+url      : http://localhost:{port}/api/admin/product/upload
+type     : DELETE
 params   : {
-    "id": 1,
+	"photoId": 1,
 }
 
 

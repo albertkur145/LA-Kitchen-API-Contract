@@ -1,4 +1,4 @@
-#DONE
+#DONE #Backend
 
 NB : 
 - untuk mengambil semua data produk berdasarkan kategori tertentu.
@@ -33,6 +33,7 @@ RESPONSE
                 "popularity": 25,
                 "rating": 4.37,
                 "sold": 62,
+                "isActive": 1,
             },
         ],
     },
