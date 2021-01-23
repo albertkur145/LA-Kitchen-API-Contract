@@ -1,7 +1,7 @@
-#DONE #Backend
+#DONE #Backend #Integrated
 
 NB : 
-- untuk menonaktifkan produk tertentu.
+- untuk mengubah data produk tertentu.
 
 
 Header
@@ -10,9 +10,13 @@ Header
 
 
 url      : http://localhost:{port}/api/admin/product
-type     : DELETE
+type     : PUT
 params   : {
     "id": 1,
+    "name": "Kastengel",
+    "price": 60000,
+    "description": "Kue home made yang sangat lezat.",
+    "subCategoryId": 3,
 }
 
 

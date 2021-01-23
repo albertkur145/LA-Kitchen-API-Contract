@@ -1,4 +1,4 @@
-#Backend
+#Backend #Integrated
 
 NB : 
 - untuk mengupload foto produk ke dalam sistem.
@@ -12,7 +12,7 @@ Header
 url      : http://localhost:{port}/api/admin/product/upload
 type     : POST
 params   : {
-	"productId": 1,
+    "productId": 1,
     "images": [
         "file-1",
         "file-2",

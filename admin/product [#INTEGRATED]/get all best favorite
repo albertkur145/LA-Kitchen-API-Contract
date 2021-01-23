@@ -1,7 +1,7 @@
-#DONE #Backend
+#DONE #Backend #Integrated
 
 NB : 
-- untuk mengambil data produk terlaris (10 teratas).
+- untuk mengambil data produk terfavorit (10 teratas).
 
 
 Header
@@ -9,7 +9,7 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/product/bestselling
+url      : http://localhost:{port}/api/admin/product/favorite
 type     : GET
 params   : -
 
@@ -24,7 +24,7 @@ RESPONSE
             {
                 "id": 1,
                 "name": "Kastengel",
-                "sold": 62,
+                "popularity": 62,
             },
         ],
     },

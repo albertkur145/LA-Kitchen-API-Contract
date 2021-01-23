@@ -1,7 +1,7 @@
-#DONE #Backend
+#DONE #Backend #Integrated
 
 NB : 
-- untuk mengambil semua data produk.
+- untuk mengambil semua data produk berdasarkan kategori tertentu.
 
 
 Header
@@ -9,10 +9,11 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/product
+url      : http://localhost:{port}/api/admin/product/category
 type     : GET
 params   : {
     "page": 1,
+    "categoryId": 1,
 }
 
 

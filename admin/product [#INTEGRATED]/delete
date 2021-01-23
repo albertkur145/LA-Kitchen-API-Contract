@@ -1,7 +1,7 @@
-#DONE #Backend
+#DONE #Backend #Integrated
 
 NB : 
-- untuk mengaktifkan produk tertentu.
+- untuk menonaktifkan produk tertentu.
 
 
 Header
@@ -9,8 +9,8 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/product/activation
-type     : PUT
+url      : http://localhost:{port}/api/admin/product
+type     : DELETE
 params   : {
     "id": 1,
 }

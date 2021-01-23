@@ -1,7 +1,7 @@
-#DONE #Backend
+#DONE #Backend #Integrated
 
 NB : 
-- untuk mengambil data produk rating tertinggi (10 teratas).
+- untuk mengambil data produk rating tertinggi (5 teratas) berdasarkan kategori.
 
 
 Header
@@ -9,9 +9,11 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/product/bestrating
+url      : http://localhost:{port}/api/admin/product/bestrating/category
 type     : GET
-params   : -
+params   : {
+    "categoryId": 1,
+}
 
 
 RESPONSE
@@ -24,6 +26,10 @@ RESPONSE
             {
                 "id": 1,
                 "name": "Kastengel",
+                "category": "Mie & Pasta",
+                "subCategory": "Mie Instan",
+                "evaluators": 17,
+                "comments": 21
                 "rating": 4.72,
             },
         ],

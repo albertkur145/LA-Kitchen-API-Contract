@@ -1,7 +1,7 @@
-#DONE #Backend
+#DONE #Backend #Integrated
 
 NB : 
-- untuk mengubah data produk tertentu.
+- untuk mengaktifkan produk tertentu.
 
 
 Header
@@ -9,14 +9,10 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/product
+url      : http://localhost:{port}/api/admin/product/activation
 type     : PUT
 params   : {
     "id": 1,
-    "name": "Kastengel",
-    "price": 60000,
-    "description": "Kue home made yang sangat lezat.",
-    "subCategoryId": 3,
 }
 
 

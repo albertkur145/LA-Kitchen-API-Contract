@@ -1,7 +1,7 @@
-#DONE #Backend
+#DONE #Backend #Integrated
 
 NB : 
-- untuk mengambil data produk terlaris (5 teratas) berdasarkan kategori.
+- untuk mengambil data produk terfavorit (5 teratas) berdasarkan kategori.
 
 
 Header
@@ -9,7 +9,7 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/product/bestselling/category
+url      : http://localhost:{port}/api/admin/product/favorite/category
 type     : GET
 params   : {
     "categoryId": 1,
@@ -28,7 +28,7 @@ RESPONSE
                 "name": "Kastengel",
                 "category": "Mie & Pasta",
                 "subCategory": "Mie Instan",
-                "sold": 62,
+                "popularity": 62,
             },
         ],
     },
