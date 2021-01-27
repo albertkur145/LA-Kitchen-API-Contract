@@ -1,7 +1,7 @@
-#DONE
+#DONE #Backend #Integrated
 
 NB : 
-- untuk mengambil semua pesanan/transaksi yang sudah fix diproses.
+- untuk mengambil semua pesanan/transaksi yang belum dikonfirmasi.
 
 
 Header
@@ -9,7 +9,7 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/order
+url      : http://localhost:{port}/api/admin/order/unprocessed
 type     : GET
 params   : {
     "page": 1,
@@ -22,13 +22,13 @@ RESPONSE
     "code": 200,
     "status": "OK",
     "data": {
-        "order": [
+        "orders": [
             {
                 "orderNumber": "130495302572",
                 "date": "16/10/2020",
                 "status": {
-                    "id": 2,
-                    "name": "Sedang dipersiapkan",
+                    "id": 1,
+                    "name": "Menunggu Pembayaran",
                 },
                 "totalPayment": 237500,
             },

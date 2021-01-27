@@ -1,7 +1,8 @@
-#DONE
+#DONE #Backend #Integrated
 
 NB : 
-- untuk mengambil semua pesanan/transaksi yang belum dikonfirmasi.
+- untuk mengambil semua pesanan/transaksi berdasarkan nomor pesanan.
+- khusus pesanan yang sudah tidak lagi diproses.
 
 
 Header
@@ -9,9 +10,10 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/order/unprocessed
+url      : http://localhost:{port}/api/admin/order/search/history
 type     : GET
 params   : {
+    "orderNumber": 123,
     "page": 1,
 }
 
@@ -27,8 +29,8 @@ RESPONSE
                 "orderNumber": "130495302572",
                 "date": "16/10/2020",
                 "status": {
-                    "id": 1,
-                    "name": "Menunggu Pembayaran",
+                    "id": 5,
+                    "name": "Selesai",
                 },
                 "totalPayment": 237500,
             },

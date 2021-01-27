@@ -1,7 +1,7 @@
-#DONE
+#DONE #Backend #Integrated
 
 NB : 
-- untuk mengupdate status pesanan/transaksi.
+- untuk mengkonfirmasi pesanan/transaksi agar diproses.
 
 
 Header
@@ -9,11 +9,10 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/order
+url      : http://localhost:{port}/api/admin/order/unprocessed
 type     : PUT
 params   : {
     "orderNumber": "1252057941520",
-    "orderStatusId": 3,
 }
 
 
