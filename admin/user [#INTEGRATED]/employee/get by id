@@ -1,0 +1,42 @@
+#DONE #Backend #Integrated
+
+NB : 
+- untuk mengambil detail data employee.
+
+
+Header
+- Content-Type   : application/json
+- Authentication : Bearer <token>
+
+
+url      : http://localhost:{port}/api/admin/employee/id
+type     : GET
+params   : {
+    "id": 1,
+}
+
+
+RESPONSE
+--------
+{
+    "code": 200,
+    "status": "OK",
+    "data": {
+        "user": {
+            "id": 1,
+            "name": "Albert Kurniawan",
+            "email": "albert@gmail.com",
+            "phoneNumber": "089532501522",
+            "province": "Sumatra Selatan",
+            "city": "Palembang",
+            "address": "JL Sabara No 4A",
+            "status": {
+                "id": 1,
+                "name": "Aktif",        
+            },
+            "registerAt": "15/02/2020",
+        },
+    },
+    "paging": null,
+    "errors": null,
+}

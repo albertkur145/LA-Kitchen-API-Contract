@@ -1,7 +1,7 @@
-#DONE
+#DONE #Backend #Integrated
 
 NB : 
-- untuk mengambil semua data employee.
+- untuk mengambil semua data customer berdasarkan status.
 
 
 Header
@@ -9,10 +9,11 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/employee
+url      : http://localhost:{port}/api/admin/customer/status
 type     : GET
 params   : {
     "page": 1,
+    "userStatusId": 1,
 }
 
 
@@ -22,7 +23,7 @@ RESPONSE
     "code": 200,
     "status": "OK",
     "data": {
-        "employees": [
+        "users": [
             {
                 "id": 1,
                 "name": "Albert Kurniawan",

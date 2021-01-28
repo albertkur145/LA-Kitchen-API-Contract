@@ -13,7 +13,6 @@ type     : PUT
 params   : {
     "id": 1,
     "name": "Albert Kurniawan",
-    "email": "albertkur@gmail.com",
     "phoneNumber": "081297541232",
     "address": "Jalan Ribawa Yunsudiro No 4E",
     "province": "Sumatra Selatan",

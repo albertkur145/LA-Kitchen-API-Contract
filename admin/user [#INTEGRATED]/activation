@@ -1,7 +1,7 @@
-#DONE
+#DONE #Backend #Integrated
 
 NB : 
-- untuk mereset password akun user.
+- untuk mengaktifkan / menonaktifkan akun user.
 
 
 Header
@@ -9,10 +9,11 @@ Header
 - Authentication : Bearer <token>
 
 
-url      : http://localhost:{port}/api/admin/user/reset
+url      : http://localhost:{port}/api/admin/user/activation
 type     : PUT
 params   : {
     "id": 1,
+    "userStatusId": 1,
 }
 
 

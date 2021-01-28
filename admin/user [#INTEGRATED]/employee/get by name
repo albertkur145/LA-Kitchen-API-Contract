@@ -1,4 +1,4 @@
-#DONE
+#DONE #Backend #Integrated
 
 NB : 
 - untuk mengambil semua data employee berdasarkan nama.
@@ -23,7 +23,7 @@ RESPONSE
     "code": 200,
     "status": "OK",
     "data": {
-        "employees": [
+        "users": [
             {
                 "id": 1,
                 "name": "Albert Kurniawan",
