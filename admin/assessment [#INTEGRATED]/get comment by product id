@@ -1,4 +1,4 @@
-#DONE
+#DONE #Backend #Integrated
 
 NB : 
 - untuk mengambil detail penilaian produk tertentu.
@@ -12,6 +12,7 @@ Header
 url      : http://localhost:{port}/api/admin/assessment/comment
 type     : GET
 params   : {
+    "page": 1,
     "productId": 1,
 }
 
@@ -29,6 +30,7 @@ RESPONSE
                 "rate": 4,
                 "comment": 'Bagus sekali',
                 "date": "19/02/2020",
+                "deletedAt": null,
             },
             {
                 "id": 2,
@@ -36,6 +38,7 @@ RESPONSE
                 "rate": 5,
                 "comment": 'Pengiriman cepat',
                 "date": "21/02/2020",
+                "deletedAt": null,
             },
         ],
     },

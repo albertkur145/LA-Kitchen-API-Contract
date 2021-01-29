@@ -1,4 +1,4 @@
-#DONE
+#DONE #Backend #Integrated
 
 NB : 
 - untuk mengambil detail penilaian produk tertentu.
@@ -30,7 +30,7 @@ RESPONSE
             "two": 0,
             "one": 0, 
         },
-        "totalAssessments": 156,
+        "totalAssessment": 156,
         "evaluators": 33,
         "rating": 4.52,
         "totalComments": 25,
