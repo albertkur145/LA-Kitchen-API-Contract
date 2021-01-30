@@ -1,4 +1,4 @@
-#DONE
+#DONE #Backend #Integrated
 
 NB : 
 - untuk mengambil penjualan dan pendapatan hari ini.
@@ -11,9 +11,7 @@ Header
 
 url      : http://localhost:{port}/api/admin/report/salestoday
 type     : GET
-params   : {
-    "page": 1,
-}
+params   : -
 
 
 RESPONSE
@@ -31,10 +29,6 @@ RESPONSE
             },
         ],
     },
-    "paging": {
-        "page": 1,
-        "count": 12,
-        "view": 5,
-    },
+    "paging": null,
     "errors": null,
 }
